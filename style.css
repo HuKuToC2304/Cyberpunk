@@ -57,13 +57,25 @@ body {
 
 /* HERO */
 
+.container {
+    padding-inline: 200px;
+}
+
 .hero {
     background-image: url('./images/background-images-hero.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-inline: 320px;
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+    position: relative;
 }
 
+.hero-header {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 .user-info-block { 
@@ -92,3 +104,27 @@ body {
     line-height: 166%;
     margin-top: 25px;
 }   
+
+.navigation-user-list {
+    list-style-type: none;
+    display: flex;
+    column-gap: 40px;
+}
+
+
+.user-info-block {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    clip-path: 
+    polygon(
+      0% 21%,     /* верхняя левая */
+      11% 0%,     /* верхняя левая */
+      100% 0%,    /* верхняя правая */
+      100% 5%,   /* верхняя правая */
+      100% 83%,  /* нижняя правая */
+      89% 100%,  /* нижняя правая */
+      0 100%,   /* нижняя левая */
+      0 95%      /* нижняя левая */
+    );
+}
