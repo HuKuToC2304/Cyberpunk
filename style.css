@@ -128,3 +128,68 @@ body {
       0 95%      /* нижняя левая */
     );
 }
+
+/* ABOUT-GAME */
+
+.about-game {
+    padding-block: 70px 140px;
+}
+
+.about-game__info-title {
+    font-size: 62px;
+    font-weight: 400;
+    font-family: var(--font-family-alternative);
+}
+
+.about-game__info-subtitle_add {
+    color: #52BEDC;
+    font-weight: 700;
+}
+
+.about-game__info-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+    font-family: var(--font-family-base);
+    width: 952px;
+    line-height: 188.889%;
+    margin-top: 25px;
+}
+
+.about-game__image {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-game__image-elements {
+    display: block;
+}
+
+.about-game__image-1,
+.about-game__image-2,
+.about-game__image-3 {
+    clip-path: 
+    polygon(
+      0% 21%,     /* верхняя левая */
+      11% 0%,     /* верхняя левая */
+      100% 0%,    /* верхняя правая */
+      100% 5%,   /* верхняя правая */
+      100% 83%,  /* нижняя правая */
+      89% 100%,  /* нижняя правая */
+      0 100%,   /* нижняя левая */
+      0 95%      /* нижняя левая */
+    );
+}
+
+.about-game__info {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-game__image-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
