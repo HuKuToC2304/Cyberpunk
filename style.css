@@ -47,6 +47,8 @@
 
     --background-color-base: #000;
     --background-color-alternative: #F8F200;
+
+    --animation-time: .3s;
 }
 
 
@@ -58,7 +60,8 @@ body {
 /* HERO */
 
 .container {
-    padding-inline: 200px;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -75,16 +78,15 @@ body {
     padding-top: 20px;
     align-items: center;
     justify-content: space-between;
+    padding-inline: 160px;
 }
 
 
 .user-info-block { 
     display: inline-block;
-    
     max-width: 624px;
     background-color: var(--background-color-alternative);
     padding: 70px;
-    
     
 }
 
@@ -111,6 +113,16 @@ body {
     column-gap: 40px;
 }
 
+.navigation-user-link {
+    display: block;
+    transition: var(--animation-time);
+}
+
+.navigation-user-link:hover,
+.navigation-user-link:focus {
+    transform: scale(1.2);
+    transition: var(--animation-time);
+}
 
 .user-info-block {
     position: absolute;
@@ -164,6 +176,12 @@ body {
 
 .about-game__image-elements {
     display: block;
+    transition: var(--animation-time);
+}
+
+.about-game__image-elements:hover {
+    transform: scale(1.03);
+    transition: var(--animation-time);
 }
 
 .about-game__image-1,
