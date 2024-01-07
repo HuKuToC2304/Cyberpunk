@@ -99,7 +99,7 @@
         </div>
     </section>
     
-    <section class="about-game container">
+    <section class="about-game">
         <div class="about-game__info">
             <h2 class="about-game__info-title">
                 Найт-Сити изменит тебя навсегда!
@@ -124,7 +124,7 @@
     </section>
 
     <section class="play-game">
-        <div class="play-game__title-about container">
+        <div class="play-game__title-about">
             <ul class="play-game__list">
                 <li class="play-game__list-item">
                     <svg width="132" height="132" viewBox="0 0 132 132" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,21 +133,112 @@
                     </svg>
                 </li>
                 <li class="play-game__list-item">
-                    <p class="play-game__list-item_title">
+                    <h2 class="play-game__list-item_title">
                         Играй и выигрывай!
-                    </p>
+                    </h2>
                 </li>
             </ul>
             <p class="play-game__subtitle">
-                Играй в <span class="about-game__info-subtitle_add">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="about-game__info-subtitle_add">Xbox Series X</span> или <span >Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!
+                Играй в <span class="about-game__info-subtitle_add">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="about-game__info-subtitle_add">Xbox Series X</span> или <span class="about-game__info-subtitle_add">Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!
             </p>
         </div>
         <div class="play-game__form-about">
             <div class="play-game__form">
-                
+                <form class="game-form" action="#">
+                    <input class="game-form-field" type="text" placeholder="Как тебя зовут?" required>
+                    <input class="game-form-field" type="email" placeholder="Твой е-mail" required>
+                    <div class="game-form-field__file-add">
+                        <button class="game-form-field__file-add_button" type="button">Прикрепить скриншот</button>
+                        <span class="game-form-field__info-file">.png / .jpg / .pdf</span>
+                    </div>
+                    <button class="play-game__button" type="submit">Отправить</button>
+                    <label class="checkbox-game-form">
+                        <input class="game-form-field-checkbox" type="checkbox" checked>
+                        <span>Согласен на обработку персональных данных</span>
+                    </label>
+                </form>
+            </div>
+            <div class="play-game__image">
+                <img src="./images/play-game-form-image.png" alt="Playstation and Xbox." width="788" height="456">
             </div>
         </div>
+    </section>
 
+    <section class="about__play-game">
+        <div class="about__play-game_img-info">
+            <img src="./images/pc-about-play-game.png" alt="PC." width="610" height="430"> 
+            <ul class="about__play-game_list">
+                <li class="about__play-game_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <g clip-path="url(#clip0_14_68)">
+                          <path d="M40.0007 80C39.6031 80 39.2071 79.993 38.8118 79.9815L46.9866 57.5152H58.2366C60.2112 57.5152 62.3788 55.9972 63.0542 54.1426L71.9227 29.7822C73.3738 25.7939 71.0894 22.5309 66.8455 22.5309H51.2381L38.1433 58.5154H38.1383L30.7142 78.9141C13.1014 74.727 0.000671387 58.8941 0.000671387 40C0.000671387 21.6509 12.3562 6.18889 29.2012 1.47667L21.541 22.5309H21.5388L8.80437 57.5152L17.2816 57.5159L28.1112 27.7881H34.4825L23.6529 57.5159L32.127 57.5174L42.2192 29.7822C43.671 25.7939 41.3864 22.5309 37.1464 22.5309H30.0205L38.2025 0.042037C38.7988 0.0155556 39.3977 0 40.0003 0C62.0918 0 80.0003 17.9085 80.0003 40C80.0003 62.0913 62.0918 80 40.0003 80H40.0007ZM64.2029 27.7667H57.8334L48.9136 52.2404H55.2833L64.2029 27.7667Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_14_68">
+                            <rect width="80" height="80" fill="white"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                </li>
+                <li class="about__play-game_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="21" viewBox="0 0 92 21" fill="none">
+                        <path d="M91 1.28149L1 19.9012" stroke="black"/>
+                        <path d="M90.8938 20.1829L1.1065 0.999834" stroke="black"/>
+                    </svg>
+                </li>
+                <li class="about__play-game_item">
+                    <img src="./icons/logo-cyberpunk.svg" alt="Cyberpunk." width="320" height="80">
+                </li>
+            </ul>
+        </div>
+        <div class="about__play-game_text-info">
+            <h2 class="about__play-game_text-info_title">Полное погружение вместе с HP</h2>
+            <p class="about__play-game_text-info_subtitle">
+                Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!
+            </p>
+            <ul class="about__play-game_text-info_list">
+                <li class="about__play-game_text-info_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_14_294)">
+                          <path d="M16 4C9.37333 4 4 9.37333 4 16C4 22.6267 9.37333 28 16 28C17.1067 28 18 27.1067 18 26C18 25.48 17.8 25.0133 17.48 24.6533C17.1733 24.3067 16.9733 23.84 16.9733 23.3333C16.9733 22.2267 17.8667 21.3333 18.9733 21.3333H21.3333C25.0133 21.3333 28 18.3467 28 14.6667C28 8.77333 22.6267 4 16 4ZM8.66667 16C7.56 16 6.66667 15.1067 6.66667 14C6.66667 12.8933 7.56 12 8.66667 12C9.77333 12 10.6667 12.8933 10.6667 14C10.6667 15.1067 9.77333 16 8.66667 16ZM12.6667 10.6667C11.56 10.6667 10.6667 9.77333 10.6667 8.66667C10.6667 7.56 11.56 6.66667 12.6667 6.66667C13.7733 6.66667 14.6667 7.56 14.6667 8.66667C14.6667 9.77333 13.7733 10.6667 12.6667 10.6667ZM19.3333 10.6667C18.2267 10.6667 17.3333 9.77333 17.3333 8.66667C17.3333 7.56 18.2267 6.66667 19.3333 6.66667C20.44 6.66667 21.3333 7.56 21.3333 8.66667C21.3333 9.77333 20.44 10.6667 19.3333 10.6667ZM23.3333 16C22.2267 16 21.3333 15.1067 21.3333 14C21.3333 12.8933 22.2267 12 23.3333 12C24.44 12 25.3333 12.8933 25.3333 14C25.3333 15.1067 24.44 16 23.3333 16Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_14_294">
+                            <rect width="32" height="32" fill="white"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Яркие насыщенные цвета</span>
+                </li>
+                <li class="about__play-game_text-info_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_14_306)">
+                          <path d="M25.3334 11.9999L27 8.33325L30.6667 6.66658L27 4.99992L25.3334 1.33325L23.6667 4.99992L20 6.66658L23.6667 8.33325L25.3334 11.9999ZM15.3334 12.6666L12 5.33325L8.66671 12.6666L1.33337 15.9999L8.66671 19.3333L12 26.6666L15.3334 19.3333L22.6667 15.9999L15.3334 12.6666ZM25.3334 19.9999L23.6667 23.6666L20 25.3333L23.6667 26.9999L25.3334 30.6666L27 26.9999L30.6667 25.3333L27 23.6666L25.3334 19.9999Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_14_306">
+                            <rect width="32" height="32" fill="white"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Кристальная четкость изображения</span>
+                </li>
+                <li class="about__play-game_text-info_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_14_314)">
+                          <path d="M18.6666 2.66675H5.33329C3.85329 2.66675 2.66663 3.86675 2.66663 5.33341V18.6667H5.33329V5.33341H18.6666V2.66675ZM24 8.00008H10.6666C9.18663 8.00008 7.99996 9.20008 7.99996 10.6667V24.0001H10.6666V10.6667H24V8.00008ZM26.6666 13.3334H16C14.52 13.3334 13.3333 14.5334 13.3333 16.0001V26.6667C13.3333 28.1334 14.52 29.3334 16 29.3334H26.6666C28.1333 29.3334 29.3333 28.1334 29.3333 26.6667V16.0001C29.3333 14.5334 28.1333 13.3334 26.6666 13.3334Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_14_314">
+                            <rect width="32" height="32" fill="white"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Быстрые движения и плавный геймплей</span>
+                </li>
+            </ul>
+            <a class="about__play-game_text-info_button" href="#">Подробнее</a>
+        </div>
     </section>
 
 </body>
