@@ -437,3 +437,41 @@ body {
     font-weight: 700;
     margin-top: 40px;
 }
+
+/* BUY GAME */
+
+.buy__game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-color-base);
+    color: #ffffff;
+    background-image: url('/images/buy-game-section-img.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vh;
+}
+
+.buy__game-info {
+    max-width: 625px;
+    padding: 70px 35px;
+}
+
+.buy__game-list {
+    list-style-type: none;
+}
+
+.buy__game-list_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buy__game-info_title {
+    font-size: 62px;
+    font-family: var(--font-family-alternative);
+}
+
+.buy__game-text-decoration {
+    color: #52BEDC;
+    font-size: 24px;
+    font-weight: 700;
+}
